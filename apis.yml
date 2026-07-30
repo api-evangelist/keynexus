@@ -1,7 +1,29 @@
 aid: keynexus
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/keynexus.png
 name: Keynexus
-description: Keynexus is a company surfaced as a portfolio company of uncork-capital and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  KeyNexus was an enterprise encryption key management company based in Victoria,
+  British Columbia, Canada, providing centralized key management, Bring Your Own
+  Key (BYOK), and Key Management as a Service for cloud, on-premises, and hybrid
+  deployments. Its platform helped enterprises generate, store, distribute, and
+  control the lifecycle of encryption keys used to protect data across
+  applications and infrastructure. KeyNexus was acquired by StorMagic in January
+  2021, and its technology was folded into the StorMagic SvKMS (Secure Virtual
+  Key Management Service) product; the keynexus.com domain now redirects to
+  StorMagic's encryption key management offering. This profile was surfaced as a
+  portfolio company of Uncork Capital and added to the API Evangelist network for
+  tracking. KeyNexus no longer operates as an independent developer platform.
 url: https://raw.githubusercontent.com/api-evangelist/keynexus/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +31,34 @@ x-backed-by:
 - uncork-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: stormagic
+x-acquired-date: '2021-01'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Security
+- Encryption
+- Key Management
+- Cybersecurity
+- Data Protection
+- Cloud Security
+- Acquired
 apis: []
+common:
+- type: Website
+  url: https://www.keynexus.com
+- type: DomainSecurity
+  url: security/keynexus-domain-security.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
